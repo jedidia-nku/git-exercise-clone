@@ -512,3 +512,48 @@ To https://github.com/jedidia-nku/Gym-Git-Exercise-Solution.git
 branch 'ft/faq-page' set up to track 'origin/ft/faq-page'.
 PS C:\Users\IT ZONE\OneDrive\Desktop\git-exercise> 
 ```
+
+### Exercise 2
+
+```bush
+PS C:\Users\IT ZONE\OneDrive\Desktop\git-exercise> git checkout -b ft/home-page-redesign
+PS C:\Users\IT ZONE\OneDrive\Desktop\git-exercise> git checkout main
+M       README.md
+  (use "git push" to publish your local commits)
+PS C:\Users\IT ZONE\OneDrive\Desktop\git-exercise> git add --all
+ 2 files changed, 513 insertions(+), 2 deletions(-)
+PS C:\Users\IT ZONE\OneDrive\Desktop\git-exercise> git checkout ft/home-page-redesign
+PS C:\Users\IT ZONE\OneDrive\Desktop\git-exercise> git rebase main 
+Successfully rebased and updated refs/heads/ft/home-page-redesign.
+PS C:\Users\IT ZONE\OneDrive\Desktop\git-exercise> git status
+On branch ft/home-page-redesign
+nothing to commit, working tree clean
+PS C:\Users\IT ZONE\OneDrive\Desktop\git-exercise> git add --all
+PS C:\Users\IT ZONE\OneDrive\Desktop\git-exercise> git commit -m "feat: add other changes to the home page"
+[ft/home-page-redesign c10ac8c] feat: add other changes to the home page
+PS C:\Users\IT ZONE\OneDrive\Desktop\git-exercise> git push 
+fatal: The current branch ft/home-page-redesign has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin ft/home-page-redesign
+
+To have this happen automatically for branches without a tracking
+upstream, see 'push.autoSetupRemote' in 'git help config'.
+
+PS C:\Users\IT ZONE\OneDrive\Desktop\git-exercise>     git push --set-upstream origin ft/home-page-redesign
+Enumerating objects: 22, done.
+Counting objects: 100% (22/22), done.
+Delta compression using up to 2 threads
+Compressing objects: 100% (18/18), done.
+Writing objects: 100% (18/18), 4.54 KiB | 290.00 KiB/s, done.
+Total 18 (delta 9), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (9/9), completed with 2 local objects.
+remote: 
+remote: Create a pull request for 'ft/home-page-redesign' on GitHub by visiting:
+remote:      https://github.com/jedidia-nku/Gym-Git-Exercise-Solution/pull/new/ft/home-page-redesign
+remote:
+To https://github.com/jedidia-nku/Gym-Git-Exercise-Solution.git
+ * [new branch]      ft/home-page-redesign -> ft/home-page-redesign
+branch 'ft/home-page-redesign' set up to track 'origin/ft/home-page-redesign'.
+PS C:\Users\IT ZONE\OneDrive\Desktop\git-exercise> 
+```
